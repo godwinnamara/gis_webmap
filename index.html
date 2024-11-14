@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using OpenLayers with Vite</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Title Section Above the Map -->
+    <h1> Population Density Map per District 2024</h1>
+
+    <div id="map" class="map"></div>
+
+    <div id="popup" class="ol-popup">
+      <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+      <div id="popup-content"></div>
+    </div>
+
+    <div class="container">
+      <div id="legend" class="legend">
+        <h3>Legend</h3>
+        <h4>% Population Growth rate 2014-2024</h4>
+        <ul>
+          <li><span style="background-color: #2b83ba; width: 12px; height: 12px; display: inline-block;"></span> -20-0</li>
+          <li><span style="background-color: #ffffb2; width: 12px; height: 12px; display: inline-block;"></span> 0-20</li>
+          <li><span style="background-color: #590001; width: 12px; height: 12px; display: inline-block;"></span> 20-40</li> 
+          <li><span style="background-color: #fd6b19; width: 12px; height: 12px; display: inline-block;"></span> 40-60</li> 
+          <li><span style="background-color: #bd0026; width: 12px; height: 12px; display: inline-block;"></span> 60-80</li> 
+          <li><span style="background-color: #800080; width: 12px; height: 12px; display: inline-block;"></span> >80</li> 
+        </ul>
+      </div>
+      <div id="legend-2" class="legend-2">
+        <h3>Legend</h3>
+        <h4>Population Density 2024</h4>
+        <img src="/legend.png" alt="Population Density Legend">
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
